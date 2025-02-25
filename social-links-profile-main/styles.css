@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap');
+
+:root {
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey-700: hsl(0, 0%, 20%);
+    --color-grey-800: hsl(0, 0%, 12%);
+    --color-grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-grey-900);
+    color: var(--color-white);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 150%;
+}
+
+.card {
+    background-color: var(--color-grey-800);
+    border-radius: 20px;
+    padding: 24px;
+    width: 322px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card-avatar-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card-avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+}
+
+.info .info-name {
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.info .info-location {
+    color: var(--color-green);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.bio {
+    color: var(--color-white);
+    text-align: center;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.social-link {
+    background-color: var(--color-grey-700);
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.social-link:hover {
+    background-color: var(--color-green);
+    color: var(--color-grey-900);
+}
+

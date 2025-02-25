@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500,800&display=swap");
+
+html {
+    font-size: clamp(14px, 1.5vw, 16px);
+}
+
+:root {
+ --color-yellow: #F4D04E;   
+ --color-gray-950: #111111;
+ --color-gray-500: #6B6B6B;
+ --color-white: #FFFFFF;
+}
+
+* {
+    font-family: Figtree, sans-serif;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-yellow);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.card {
+    background-color: var(--color-white);
+    width: 21rem;
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+    border: 0.13rem solid var(--color-gray-950);
+    box-shadow: 0.6rem 0.6rem 0 0 var(--color-gray-950);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card-hero {
+    overflow: hidden;
+    border-radius: 0.6rem;
+}
+
+.card-hero img {
+    display: block;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.tags-container {
+    font-weight: bold;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tag {
+    background-color: var(--color-yellow);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+}
+
+.card-date {
+    color: var(--color-gray-950);
+    font-size: 0.9rem;
+}
+
+.card-title h3{
+    color: var(--color-gray-950);
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.1s ease-in-out;
+}
+
+.card:hover .card-title,
+.card:focus .card-title,
+.card:active .card-title {
+    color: var(--color-yellow);
+}
+
+.card-detail {
+    color: var(--color-gray-500);
+    font-size: 1rem;
+}
+
+.card-footer {
+    display: flex;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.avatar-container {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.avatar-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-author-name {
+    color: var(--color-gray-950);
+    font-size: 0.9rem;
+    font-weight: bold;
+
+}
+
